@@ -1,0 +1,26 @@
+{
+  "name": "kiraria-2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  
+  "author": "Mattéo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "humanize-duration": "^3.27.0",
+    "parse-duration": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaiiexo/Kiraria.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kawaiiexo/Kiraria/issues"
+  },
+  "homepage": "https://github.com/kawaiiexo/Kiraria#readme",
+  "description": ""
+}
