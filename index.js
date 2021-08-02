@@ -64,13 +64,12 @@ client.on('channelCreate', channel => {
 
 client.on('ready', () => {
     const statuses = [
-        'Genshin Impact',
-        'Jump Force',
-        'Des films'
+        () => `${client.guilds.cache.size} serveurs`,
+        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)} utilisateurs`
     ]
     let i = 0
     setInterval(() => {
-        client.user.setActivity(statuses[i], {type: 'STREAMING', url: 'https://twitch.tv/Exo Infinity'})
+        client.user.setActivity(statuses[i](), {type: 'STREAMING', url: 'https://twitch.tv/Exo Infinity'})
         i = ++i % statuses.length
     }, 1e4)
 })
